@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Xo-WS-3Eg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--创建新的比赛-->
+        <scene sceneID="8s5-62-eAC">
+            <objects>
+                <viewController id="jkp-s5-42Q" customClass="CreateAGameViewController" customModule="MyFrisbeeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SNJ-Zu-Gjn"/>
+                        <viewControllerLayoutGuide type="bottom" id="TXn-MJ-A9l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Ay-E4-DQX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Yx-Qp-9CW">
+                                <rect key="frame" x="28" y="101" width="331" height="505"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="在这里输入标题" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rNW-RA-lTn">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="106"/>
+                                        <color key="backgroundColor" red="1" green="0.54333158179999996" blue="0.98632997909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="106" id="j1y-W1-ZWa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_7237.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="Glc-Ik-Snj">
+                                        <rect key="frame" x="0.0" y="126" width="331" height="220"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="在这里输入比赛描述" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7E6-X5-62f">
+                                        <rect key="frame" x="0.0" y="366" width="331" height="139"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="139" id="tTp-WZ-d8F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99784255445582504" blue="0.96294116820719267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Yx-Qp-9CW" firstAttribute="leading" secondItem="4Ay-E4-DQX" secondAttribute="leadingMargin" constant="12" id="Eza-mF-die"/>
+                            <constraint firstItem="TXn-MJ-A9l" firstAttribute="top" secondItem="8Yx-Qp-9CW" secondAttribute="bottom" constant="61" id="FMg-0U-plO"/>
+                            <constraint firstItem="8Yx-Qp-9CW" firstAttribute="trailing" secondItem="4Ay-E4-DQX" secondAttribute="trailingMargin" id="O8F-kQ-pBx"/>
+                            <constraint firstItem="8Yx-Qp-9CW" firstAttribute="top" secondItem="SNJ-Zu-Gjn" secondAttribute="bottom" constant="37" id="f3Q-Tv-Z3X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="创建新的比赛" id="6xW-Ca-gDW">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="toj-iH-U86"/>
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="bXk-5B-3zW"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionImageView" destination="Glc-Ik-Snj" id="UWQ-ex-jB5"/>
+                        <outlet property="descriptionTextView" destination="7E6-X5-62f" id="DwK-1i-70j"/>
+                        <outlet property="titleTextView" destination="rNW-RA-lTn" id="vJ1-fm-cin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sh4-Fn-6KK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="89.505247376311857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c6o-I9-nJT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Xo-WS-3Eg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sc7-42-rbb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jkp-s5-42Q" kind="relationship" relationship="rootViewController" id="umA-lS-uYh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSx-t2-uuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="89.505247376311857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_7237.JPG" width="3024" height="4032"/>
+    </resources>
+</document>

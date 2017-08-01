@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DED46F61F30713B00B6012F /* contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DED46F41F30713B00B6012F /* contact.storyboard */; };
+		7DED46F71F30713B00B6012F /* createAGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DED46F51F30713B00B6012F /* createAGame.storyboard */; };
+		7DED46F91F30718500B6012F /* CreateAGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DED46F81F30718500B6012F /* CreateAGame.swift */; };
 		E24B60335053D9C3805CABC6 /* Pods_MyFrisbeeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF9E735FABB18DB2060D77C /* Pods_MyFrisbeeApp.framework */; };
 		E98BF8951F3060E700017C83 /* Pickup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98BF8941F3060E700017C83 /* Pickup.storyboard */; };
 		E9E875361F301373007EC169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E875351F301373007EC169 /* AppDelegate.swift */; };
@@ -28,6 +31,9 @@
 /* Begin PBXFileReference section */
 		3EF9E735FABB18DB2060D77C /* Pods_MyFrisbeeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFrisbeeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5428D38276936E1E29CB1045 /* Pods-MyFrisbeeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFrisbeeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7DED46F41F30713B00B6012F /* contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = contact.storyboard; path = Storyboards/contact.storyboard; sourceTree = "<group>"; };
+		7DED46F51F30713B00B6012F /* createAGame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = createAGame.storyboard; path = Storyboards/createAGame.storyboard; sourceTree = "<group>"; };
+		7DED46F81F30718500B6012F /* CreateAGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAGame.swift; path = Controller/CreateAGame.swift; sourceTree = "<group>"; };
 		E822E4ADE5A3C22BF70B4106 /* Pods-MyFrisbeeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFrisbeeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp.release.xcconfig"; sourceTree = "<group>"; };
 		E98BF8941F3060E700017C83 /* Pickup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Pickup.storyboard; path = Storyboards/Pickup.storyboard; sourceTree = "<group>"; };
 		E9E875321F301373007EC169 /* MyFrisbeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFrisbeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +138,7 @@
 		E9E8754E1F3017A4007EC169 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7DED46F81F30718500B6012F /* CreateAGame.swift */,
 				E9E875661F3026DE007EC169 /* LoginViewController.swift */,
 				E9E875521F301828007EC169 /* ViewController.swift */,
 				E9E875641F3026C1007EC169 /* CreateUsernameViewController.swift */,
@@ -167,6 +174,8 @@
 		E9E875541F301835007EC169 /* Stroyboard */ = {
 			isa = PBXGroup;
 			children = (
+				7DED46F41F30713B00B6012F /* contact.storyboard */,
+				7DED46F51F30713B00B6012F /* createAGame.storyboard */,
 				E9E875551F301856007EC169 /* Main.storyboard */,
 				E98BF8941F3060E700017C83 /* Pickup.storyboard */,
 				E9E8755D1F3019CA007EC169 /* Login.storyboard */,
@@ -248,6 +257,8 @@
 				E9E875581F301862007EC169 /* LaunchScreen.storyboard in Resources */,
 				E9E8755C1F3018E9007EC169 /* GoogleService-Info.plist in Resources */,
 				E98BF8951F3060E700017C83 /* Pickup.storyboard in Resources */,
+				7DED46F61F30713B00B6012F /* contact.storyboard in Resources */,
+				7DED46F71F30713B00B6012F /* createAGame.storyboard in Resources */,
 				E9E875401F301373007EC169 /* Assets.xcassets in Resources */,
 				E9E8755E1F3019CA007EC169 /* Login.storyboard in Resources */,
 				E9E875561F301856007EC169 /* Main.storyboard in Resources */,
@@ -316,6 +327,7 @@
 				E9E8756F1F304D44007EC169 /* UserService.swift in Sources */,
 				E9E875361F301373007EC169 /* AppDelegate.swift in Sources */,
 				E9E875711F304DDB007EC169 /* Storyboard+Utility.swift in Sources */,
+				7DED46F91F30718500B6012F /* CreateAGame.swift in Sources */,
 				E9E8756B1F304CE4007EC169 /* Constants.swift in Sources */,
 				E9E8756D1F304D3B007EC169 /* User.swift in Sources */,
 			);
