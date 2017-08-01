@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E24B60335053D9C3805CABC6 /* Pods_MyFrisbeeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF9E735FABB18DB2060D77C /* Pods_MyFrisbeeApp.framework */; };
+		E9E875361F301373007EC169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E875351F301373007EC169 /* AppDelegate.swift */; };
+		E9E8753E1F301373007EC169 /* MyFrisbeeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E8753C1F301373007EC169 /* MyFrisbeeApp.xcdatamodeld */; };
+		E9E875401F301373007EC169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E8753F1F301373007EC169 /* Assets.xcassets */; };
+		E9E875531F301828007EC169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E875521F301828007EC169 /* ViewController.swift */; };
+		E9E875561F301856007EC169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E875551F301856007EC169 /* Main.storyboard */; };
+		E9E875581F301862007EC169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E875571F301862007EC169 /* LaunchScreen.storyboard */; };
+		E9E8755C1F3018E9007EC169 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9E8755B1F3018E9007EC169 /* GoogleService-Info.plist */; };
+		E9E8755E1F3019CA007EC169 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E8755D1F3019CA007EC169 /* Login.storyboard */; };
+		E9E875651F3026C1007EC169 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E875641F3026C1007EC169 /* CreateUsernameViewController.swift */; };
+		E9E875671F3026DE007EC169 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E875661F3026DE007EC169 /* LoginViewController.swift */; };
+		E9E8756B1F304CE4007EC169 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8756A1F304CE4007EC169 /* Constants.swift */; };
+		E9E8756D1F304D3B007EC169 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8756C1F304D3B007EC169 /* User.swift */; };
+		E9E8756F1F304D44007EC169 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8756E1F304D44007EC169 /* UserService.swift */; };
+		E9E875711F304DDB007EC169 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E875701F304DDB007EC169 /* Storyboard+Utility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EF9E735FABB18DB2060D77C /* Pods_MyFrisbeeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFrisbeeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5428D38276936E1E29CB1045 /* Pods-MyFrisbeeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFrisbeeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E822E4ADE5A3C22BF70B4106 /* Pods-MyFrisbeeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFrisbeeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp.release.xcconfig"; sourceTree = "<group>"; };
+		E9E875321F301373007EC169 /* MyFrisbeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFrisbeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E875351F301373007EC169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9E8753D1F301373007EC169 /* MyFrisbeeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFrisbeeApp.xcdatamodel; sourceTree = "<group>"; };
+		E9E8753F1F301373007EC169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9E875521F301828007EC169 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		E9E875551F301856007EC169 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		E9E875571F301862007EC169 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9E875591F3018DD007EC169 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supportingd/Info.plist; sourceTree = "<group>"; };
+		E9E8755B1F3018E9007EC169 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supportingd/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E9E8755D1F3019CA007EC169 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Supportingd/Login.storyboard; sourceTree = "<group>"; };
+		E9E875641F3026C1007EC169 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateUsernameViewController.swift; path = Controller/CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		E9E875661F3026DE007EC169 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controller/LoginViewController.swift; sourceTree = "<group>"; };
+		E9E8756A1F304CE4007EC169 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Supportingd/Constants.swift; sourceTree = "<group>"; };
+		E9E8756C1F304D3B007EC169 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		E9E8756E1F304D44007EC169 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Service/UserService.swift; sourceTree = "<group>"; };
+		E9E875701F304DDB007EC169 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9E8752F1F301373007EC169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24B60335053D9C3805CABC6 /* Pods_MyFrisbeeApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3751E824E277ABAFD3AA2E7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EF9E735FABB18DB2060D77C /* Pods_MyFrisbeeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FCACB8617F8EC766C20B9DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5428D38276936E1E29CB1045 /* Pods-MyFrisbeeApp.debug.xcconfig */,
+				E822E4ADE5A3C22BF70B4106 /* Pods-MyFrisbeeApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9E875291F301373007EC169 = {
+			isa = PBXGroup;
+			children = (
+				E9E875341F301373007EC169 /* MyFrisbeeApp */,
+				E9E875331F301373007EC169 /* Products */,
+				9FCACB8617F8EC766C20B9DE /* Pods */,
+				3751E824E277ABAFD3AA2E7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9E875331F301373007EC169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9E875321F301373007EC169 /* MyFrisbeeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9E875341F301373007EC169 /* MyFrisbeeApp */ = {
+			isa = PBXGroup;
+			children = (
+				E9E875351F301373007EC169 /* AppDelegate.swift */,
+				E9E875611F302462007EC169 /* Models */,
+				E9E875501F3017B1007EC169 /* Helper */,
+				E9E8754D1F30179D007EC169 /* Service */,
+				E9E8754E1F3017A4007EC169 /* View Controller */,
+				E9E8754C1F301773007EC169 /* Extensions */,
+				E9E8753F1F301373007EC169 /* Assets.xcassets */,
+				E9E8753C1F301373007EC169 /* MyFrisbeeApp.xcdatamodeld */,
+				E9E875541F301835007EC169 /* Stroyboard */,
+				E9E8754F1F3017AC007EC169 /* Source */,
+				E9E875511F3017B7007EC169 /* Supportings */,
+			);
+			path = MyFrisbeeApp;
+			sourceTree = "<group>";
+		};
+		E9E8754C1F301773007EC169 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9E875701F304DDB007EC169 /* Storyboard+Utility.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		E9E8754D1F30179D007EC169 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E9E8756E1F304D44007EC169 /* UserService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		E9E8754E1F3017A4007EC169 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9E875661F3026DE007EC169 /* LoginViewController.swift */,
+				E9E875521F301828007EC169 /* ViewController.swift */,
+				E9E875641F3026C1007EC169 /* CreateUsernameViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		E9E8754F1F3017AC007EC169 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		E9E875501F3017B1007EC169 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		E9E875511F3017B7007EC169 /* Supportings */ = {
+			isa = PBXGroup;
+			children = (
+				E9E8755B1F3018E9007EC169 /* GoogleService-Info.plist */,
+				E9E875591F3018DD007EC169 /* Info.plist */,
+				E9E875571F301862007EC169 /* LaunchScreen.storyboard */,
+				E9E8756A1F304CE4007EC169 /* Constants.swift */,
+			);
+			name = Supportings;
+			sourceTree = "<group>";
+		};
+		E9E875541F301835007EC169 /* Stroyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E9E875551F301856007EC169 /* Main.storyboard */,
+				E9E8755D1F3019CA007EC169 /* Login.storyboard */,
+			);
+			name = Stroyboard;
+			sourceTree = "<group>";
+		};
+		E9E875611F302462007EC169 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9E8756C1F304D3B007EC169 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9E875311F301373007EC169 /* MyFrisbeeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E875471F301373007EC169 /* Build configuration list for PBXNativeTarget "MyFrisbeeApp" */;
+			buildPhases = (
+				6EE7D58F9B475D021D48E999 /* [CP] Check Pods Manifest.lock */,
+				E9E8752E1F301373007EC169 /* Sources */,
+				E9E8752F1F301373007EC169 /* Frameworks */,
+				E9E875301F301373007EC169 /* Resources */,
+				BE61110703DED7EED66A046B /* [CP] Embed Pods Frameworks */,
+				DA1E7CE2502E06146CCB8775 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFrisbeeApp;
+			productName = MyFrisbeeApp;
+			productReference = E9E875321F301373007EC169 /* MyFrisbeeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9E8752A1F301373007EC169 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Thomas;
+				TargetAttributes = {
+					E9E875311F301373007EC169 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 46FRJN92ZC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E9E8752D1F301373007EC169 /* Build configuration list for PBXProject "MyFrisbeeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9E875291F301373007EC169;
+			productRefGroup = E9E875331F301373007EC169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9E875311F301373007EC169 /* MyFrisbeeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9E875301F301373007EC169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E875581F301862007EC169 /* LaunchScreen.storyboard in Resources */,
+				E9E8755C1F3018E9007EC169 /* GoogleService-Info.plist in Resources */,
+				E9E875401F301373007EC169 /* Assets.xcassets in Resources */,
+				E9E8755E1F3019CA007EC169 /* Login.storyboard in Resources */,
+				E9E875561F301856007EC169 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EE7D58F9B475D021D48E999 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE61110703DED7EED66A046B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA1E7CE2502E06146CCB8775 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9E8752E1F301373007EC169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E875671F3026DE007EC169 /* LoginViewController.swift in Sources */,
+				E9E875531F301828007EC169 /* ViewController.swift in Sources */,
+				E9E875651F3026C1007EC169 /* CreateUsernameViewController.swift in Sources */,
+				E9E8753E1F301373007EC169 /* MyFrisbeeApp.xcdatamodeld in Sources */,
+				E9E8756F1F304D44007EC169 /* UserService.swift in Sources */,
+				E9E875361F301373007EC169 /* AppDelegate.swift in Sources */,
+				E9E875711F304DDB007EC169 /* Storyboard+Utility.swift in Sources */,
+				E9E8756B1F304CE4007EC169 /* Constants.swift in Sources */,
+				E9E8756D1F304D3B007EC169 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E9E875451F301373007EC169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9E875461F301373007EC169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9E875481F301373007EC169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5428D38276936E1E29CB1045 /* Pods-MyFrisbeeApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46FRJN92ZC;
+				INFOPLIST_FILE = "$(SRCROOT)/MyFrisbeeApp/Supportingd/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MyFrisbeeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E9E875491F301373007EC169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E822E4ADE5A3C22BF70B4106 /* Pods-MyFrisbeeApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46FRJN92ZC;
+				INFOPLIST_FILE = "$(SRCROOT)/MyFrisbeeApp/Supportingd/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MyFrisbeeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9E8752D1F301373007EC169 /* Build configuration list for PBXProject "MyFrisbeeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E875451F301373007EC169 /* Debug */,
+				E9E875461F301373007EC169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E875471F301373007EC169 /* Build configuration list for PBXNativeTarget "MyFrisbeeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E875481F301373007EC169 /* Debug */,
+				E9E875491F301373007EC169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9E8753C1F301373007EC169 /* MyFrisbeeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9E8753D1F301373007EC169 /* MyFrisbeeApp.xcdatamodel */,
+			);
+			currentVersion = E9E8753D1F301373007EC169 /* MyFrisbeeApp.xcdatamodel */;
+			path = MyFrisbeeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E9E8752A1F301373007EC169 /* Project object */;
+}
