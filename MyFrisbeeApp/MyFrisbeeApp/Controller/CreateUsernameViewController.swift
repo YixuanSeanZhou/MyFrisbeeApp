@@ -48,7 +48,7 @@ class CreateUsernameViewController: UIViewController {
                 
                 print("Created new user : \(user.username)")
                 
-                let storyboard = UIStoryboard(name: "Main", bundle: .main)
+                let storyboard = UIStoryboard(type: .main)
                 if let initialViewController = storyboard.instantiateInitialViewController(){
                 
                     self.view.window?.rootViewController = initialViewController

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E24B60335053D9C3805CABC6 /* Pods_MyFrisbeeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF9E735FABB18DB2060D77C /* Pods_MyFrisbeeApp.framework */; };
+		E98BF8951F3060E700017C83 /* Pickup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98BF8941F3060E700017C83 /* Pickup.storyboard */; };
 		E9E875361F301373007EC169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E875351F301373007EC169 /* AppDelegate.swift */; };
 		E9E8753E1F301373007EC169 /* MyFrisbeeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E8753C1F301373007EC169 /* MyFrisbeeApp.xcdatamodeld */; };
 		E9E875401F301373007EC169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E8753F1F301373007EC169 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		3EF9E735FABB18DB2060D77C /* Pods_MyFrisbeeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFrisbeeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5428D38276936E1E29CB1045 /* Pods-MyFrisbeeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFrisbeeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E822E4ADE5A3C22BF70B4106 /* Pods-MyFrisbeeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFrisbeeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp.release.xcconfig"; sourceTree = "<group>"; };
+		E98BF8941F3060E700017C83 /* Pickup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Pickup.storyboard; path = Storyboards/Pickup.storyboard; sourceTree = "<group>"; };
 		E9E875321F301373007EC169 /* MyFrisbeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFrisbeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E875351F301373007EC169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E8753D1F301373007EC169 /* MyFrisbeeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFrisbeeApp.xcdatamodel; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E875551F301856007EC169 /* Main.storyboard */,
+				E98BF8941F3060E700017C83 /* Pickup.storyboard */,
 				E9E8755D1F3019CA007EC169 /* Login.storyboard */,
 			);
 			name = Stroyboard;
@@ -244,6 +247,7 @@
 			files = (
 				E9E875581F301862007EC169 /* LaunchScreen.storyboard in Resources */,
 				E9E8755C1F3018E9007EC169 /* GoogleService-Info.plist in Resources */,
+				E98BF8951F3060E700017C83 /* Pickup.storyboard in Resources */,
 				E9E875401F301373007EC169 /* Assets.xcassets in Resources */,
 				E9E8755E1F3019CA007EC169 /* Login.storyboard in Resources */,
 				E9E875561F301856007EC169 /* Main.storyboard in Resources */,
