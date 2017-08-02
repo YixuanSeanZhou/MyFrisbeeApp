@@ -29,7 +29,11 @@ class CreateAGameViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var viewPlayersButton: UIButton!
     @IBAction func cancelBarButtonTapped(_ sender: UIBarButtonItem) {
-        
+        let storyboard = UIStoryboard(type: .main)
+        if let initialViewController = storyboard.instantiateInitialViewController() {
+            self.view.window?.rootViewController = initialViewController
+            self.view.window?.makeKeyAndVisible()
+        }
     }
 
     @IBAction func doneBarButtonTapped(_ sender: Any) {
@@ -37,6 +41,13 @@ class CreateAGameViewController: UIViewController {
         locationTextField.isUserInteractionEnabled=false
         timeTextField.isUserInteractionEnabled=false
         descriptionTextView.isUserInteractionEnabled=false
+        
+        
+        let storyboard = UIStoryboard(type: .main)
+        if let initialViewController = storyboard.instantiateInitialViewController() {
+            self.view.window?.rootViewController = initialViewController
+            self.view.window?.makeKeyAndVisible()
+        }
     }
     
     
