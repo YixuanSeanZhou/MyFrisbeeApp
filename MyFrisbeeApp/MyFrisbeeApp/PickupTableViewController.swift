@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class PickupTableViewController: UITableViewController {
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
@@ -39,10 +41,24 @@ class PickupTableViewController: UITableViewController {
     }
 
     
+    var games = [Game]() {
+        didSet{
+            tableView.reloadData()
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        FirebaseHelper.createGame(gameTitle: "asd", gameTime: "21", gameLocation: "sdf", gameURL: "edf", gameHeight: 123.2)
+        
+        
+        FirebaseHelper.getGames { (games) in
+            self.games = games
+        }
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -64,13 +80,23 @@ class PickupTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return games.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "PickupGameInfoCell", for: indexPath) as! PickupGamesInfo
 
+        
+        
+         cell.titleTextField.text = self.games[Int(indexPath.row)].gameTitle
+         cell.locationTextField.text = self.games[Int(indexPath.row)].gameLocation
+         cell.timeTextField.text = self.games[Int(indexPath.row)].gameTime
+         cell.gameIcon.af_setImage(withURL: URL(string: self.games[Int(indexPath.row)].imageURL)!)
+        
         // Configure the cell...
 
         return cell

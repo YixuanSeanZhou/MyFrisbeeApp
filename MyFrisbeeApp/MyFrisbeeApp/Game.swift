@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import FirebaseDatabase.FIRDataSnapshot
 
-class Post {
+class Game {
     
     var key: String?
     let imageURL: String
@@ -18,7 +18,8 @@ class Post {
     let gameTitle: String
     let gameLocation: String
     let gameTime: String
-    let poster: User
+//    let poster: User
+    let userName: String
     
     init(imageURL: String, imageHeight: CGFloat, gameTitle: String, gameLocation: String, gameTime: String){
         self.imageURL = imageURL
@@ -26,12 +27,23 @@ class Post {
         self.gameTitle = gameTitle
         self.gameTime = gameTime
         self.gameLocation = gameLocation
-        self.poster = User.current
+        self.userName = User.current.username
+//        self.poster = User.current
     }
     
+    init?(dictionary: [String: Any], key: String){
+        self.gameTitle = dictionary["gameTitle"] as! String
+        self.gameLocation = dictionary["gameLocation"] as! String
+        self.gameTime = dictionary["gameTime"] as! String
+        self.imageURL = dictionary["gameURL"] as! String
+//        self.poster = dictionary["gamePoster"] as! User
+        self.userName = dictionary["gamePoster"] as! String
+        self.imageHeight = CGFloat(dictionary["gameHeight"] as! Float)
+    }
+
   
     //create a failable initialer in our Post class to take a DataSnapshot.
-    
+    /*
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
             
@@ -61,20 +73,20 @@ class Post {
         
     }
     
-    
+    */
     //Functioning while uploading
     
-    var dictValue: [String : Any] {
-        let userDict = ["uid" : poster.uid,
-                        "username" : poster.username]
-        
-        return ["image_url" : imageURL,
-                "image_height" : imageHeight,
-                "game_title" : gameTitle,
-                "game_time" : gameTime,
-                "game_location" : gameLocation,
-                "poster" : userDict]
-    }
+//    var dictValue: [String : Any] {
+//        let userDict = ["uid" : poster.uid,
+//                        "username" : poster.username]
+//        
+//        return ["image_url" : imageURL,
+//                "image_height" : imageHeight,
+//                "game_title" : gameTitle,
+//                "game_time" : gameTime,
+//                "game_location" : gameLocation,
+//                "poster" : userDict]
+    
     
     //Create a new post
     

@@ -1,4 +1,9 @@
 PODS:
+  - Alamofire (4.5.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - AlamofireNetworkActivityIndicator (2.2.0):
+    - Alamofire (~> 4.5)
   - Firebase/Auth (4.0.4):
     - Firebase/Core
     - FirebaseAuth (= 4.0.0)
@@ -48,15 +53,47 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`)
+  - AlamofireImage (from `https://github.com/Alamofire/AlamofireImage.git`)
+  - AlamofireNetworkActivityIndicator (from `https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git`)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
   - FirebaseUI/Auth
+  - SwiftyJSON (from `https://github.com/IBM-Swift/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+  AlamofireImage:
+    :git: https://github.com/Alamofire/AlamofireImage.git
+  AlamofireNetworkActivityIndicator:
+    :git: https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git
+  SwiftyJSON:
+    :git: https://github.com/IBM-Swift/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 5bd458ca09a57fb2999772745d6438585f5140a7
+    :git: https://github.com/Alamofire/Alamofire.git
+  AlamofireImage:
+    :commit: de5944b41d7c94fe6830b8113d33f51db2ae0737
+    :git: https://github.com/Alamofire/AlamofireImage.git
+  AlamofireNetworkActivityIndicator:
+    :commit: da5fe47a66e05e9c3b18e2e2997b6edd60aa0c53
+    :git: https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git
+  SwiftyJSON:
+    :commit: 2bdc9d111f320baf93e644e6fced465da9bd5bac
+    :git: https://github.com/IBM-Swift/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  Alamofire: 2983f0804e7566e66b937f5e7ef4aeba7b910426
+  AlamofireImage: 0ff319da83d6abb78a661d7296e742e7f65e15f5
+  AlamofireNetworkActivityIndicator: 1b37f625e82da75465fc624bf26cf37cabd99a42
   Firebase: 1492bf04e1b73a7353b4fb2cf5a20bac9692f341
   FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
   FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
@@ -68,7 +105,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 7264ca205da32a18a8f927076b9429104ceaad17
+PODFILE CHECKSUM: cb2083f89f3f5fdf7ab831698bb132ff87101e85
 
 COCOAPODS: 1.2.1
