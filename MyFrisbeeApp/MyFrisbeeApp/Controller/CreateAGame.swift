@@ -25,6 +25,11 @@ class CreateAGameViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var descriptionImageView: UIImageView!
     @IBOutlet weak var titleTextView: UITextView!
+    
+    
+    
+    
+    
     /*
      // MARK: - Navigation
      

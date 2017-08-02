@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Xo-WS-3Eg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Xo-WS-3Eg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,16 +25,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Yx-Qp-9CW">
                                 <rect key="frame" x="28" y="101" width="331" height="505"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="在这里输入标题" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rNW-RA-lTn">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" text="在这里输入标题" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rNW-RA-lTn">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="106"/>
                                         <color key="backgroundColor" red="1" green="0.54333158179999996" blue="0.98632997909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="106" id="j1y-W1-ZWa"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_7237.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="Glc-Ik-Snj">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoli-marin" translatesAutoresizingMaskIntoConstraints="NO" id="Glc-Ik-Snj">
                                         <rect key="frame" x="0.0" y="126" width="331" height="220"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="在这里输入比赛描述" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7E6-X5-62f">
@@ -91,6 +91,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_7237.JPG" width="3024" height="4032"/>
+        <image name="yoli-marin" width="960" height="640"/>
     </resources>
 </document>

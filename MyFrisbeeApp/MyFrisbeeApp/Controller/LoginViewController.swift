@@ -48,29 +48,18 @@ extension LoginViewController: FUIAuthDelegate {
         let userRef = Database.database().reference().child("users").child(user.uid)
         
         // what is unowned self
-        userRef.observeSingleEvent(of: .value, with: { [unowned self] (snapshot) in
-           // print (user)
-            if let user = User(snapshot: snapshot) { //existing user
-                //print ("what")
-                User.setCurrent(user)
+        UserService.show(forUID: user.uid) { (user) in
+            if let user = user {
+                // handle existing user
+                User.setCurrent(user, writeToUserDefaults: true)
+                let initialViewController = UIStoryboard.initialViewController(for: .main)
+                self.view.window?.rootViewController = initialViewController
+                self.view.window?.makeKeyAndVisible()
                 
-                //Loading another storyboard
-                //Here want to load the Main
-                //With enum
-
-                let storyboard = UIStoryboard(type: .main)
-                
-
-                if let initialViewController = storyboard.instantiateInitialViewController() {
-                    self.view.window?.rootViewController = initialViewController
-                    self.view.window?.makeKeyAndVisible()
-                }
-            } else { // new user creation
-                //print ("give me ")
-                self.performSegue(withIdentifier: Constants.Segue.toCreateUsername, sender: self)
-                
+            } else {
+                // handle new user
+                self.performSegue(withIdentifier: "toCreateUsername", sender: self)
             }
-            //print("give")
-        })
+        }
     }
 }

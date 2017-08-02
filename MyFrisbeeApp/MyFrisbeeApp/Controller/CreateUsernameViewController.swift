@@ -40,11 +40,12 @@ class CreateUsernameViewController: UIViewController {
         
             UserService.create(firUser, username: username) { (user) in
                 guard let user = user
-                    else{
-                        return
+                    else {
+                    // handle error
+                    return
                 }
                 
-                User.setCurrent(user)
+                User.setCurrent(user, writeToUserDefaults: true)
                 
                 print("Created new user : \(user.username)")
                 
