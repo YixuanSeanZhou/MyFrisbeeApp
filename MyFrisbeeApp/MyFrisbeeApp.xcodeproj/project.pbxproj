@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D70F8351F31AF140016B126 /* CreateAGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70F8341F31AF140016B126 /* CreateAGameViewController.swift */; };
 		7DED46F61F30713B00B6012F /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DED46F41F30713B00B6012F /* Contact.storyboard */; };
 		7DED46F71F30713B00B6012F /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DED46F51F30713B00B6012F /* Create.storyboard */; };
-		7DED46F91F30718500B6012F /* CreateAGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DED46F81F30718500B6012F /* CreateAGame.swift */; };
 		E24B60335053D9C3805CABC6 /* Pods_MyFrisbeeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF9E735FABB18DB2060D77C /* Pods_MyFrisbeeApp.framework */; };
 		E940F6E41F30CC800012F027 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940F6E31F30CC800012F027 /* Game.swift */; };
 		E940F6E61F3153EF0012F027 /* PickupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940F6E51F3153EF0012F027 /* PickupTableViewController.swift */; };
@@ -37,9 +37,9 @@
 /* Begin PBXFileReference section */
 		3EF9E735FABB18DB2060D77C /* Pods_MyFrisbeeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFrisbeeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5428D38276936E1E29CB1045 /* Pods-MyFrisbeeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFrisbeeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7D70F8341F31AF140016B126 /* CreateAGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAGameViewController.swift; path = Controller/CreateAGameViewController.swift; sourceTree = "<group>"; };
 		7DED46F41F30713B00B6012F /* Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Contact.storyboard; path = Storyboards/Contact.storyboard; sourceTree = "<group>"; };
 		7DED46F51F30713B00B6012F /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Create.storyboard; path = Storyboards/Create.storyboard; sourceTree = "<group>"; };
-		7DED46F81F30718500B6012F /* CreateAGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAGame.swift; path = Controller/CreateAGame.swift; sourceTree = "<group>"; };
 		E822E4ADE5A3C22BF70B4106 /* Pods-MyFrisbeeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFrisbeeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp.release.xcconfig"; sourceTree = "<group>"; };
 		E940F6E31F30CC800012F027 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		E940F6E51F3153EF0012F027 /* PickupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickupTableViewController.swift; sourceTree = "<group>"; };
@@ -160,11 +160,11 @@
 			isa = PBXGroup;
 			children = (
 				E940F6E51F3153EF0012F027 /* PickupTableViewController.swift */,
-				7DED46F81F30718500B6012F /* CreateAGame.swift */,
 				E9E875661F3026DE007EC169 /* LoginViewController.swift */,
 				E9E875521F301828007EC169 /* ViewController.swift */,
 				E9E875641F3026C1007EC169 /* CreateUsernameViewController.swift */,
 				E99276121F3084900046415E /* ContactViewController.swift */,
+				7D70F8341F31AF140016B126 /* CreateAGameViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -350,6 +350,7 @@
 				E99276131F3084900046415E /* ContactViewController.swift in Sources */,
 				E9E875671F3026DE007EC169 /* LoginViewController.swift in Sources */,
 				E9E875531F301828007EC169 /* ViewController.swift in Sources */,
+				7D70F8351F31AF140016B126 /* CreateAGameViewController.swift in Sources */,
 				E9E875651F3026C1007EC169 /* CreateUsernameViewController.swift in Sources */,
 				E94BCD791F316B9F006A9848 /* FirebaseHelper.swift in Sources */,
 				E9E8753E1F301373007EC169 /* MyFrisbeeApp.xcdatamodeld in Sources */,
@@ -358,7 +359,6 @@
 				E992760F1F307AED0046415E /* PickupGamesInfo.swift in Sources */,
 				E9E875361F301373007EC169 /* AppDelegate.swift in Sources */,
 				E9E875711F304DDB007EC169 /* Storyboard+Utility.swift in Sources */,
-				7DED46F91F30718500B6012F /* CreateAGame.swift in Sources */,
 				E9E8756B1F304CE4007EC169 /* Constants.swift in Sources */,
 				E9E8756D1F304D3B007EC169 /* User.swift in Sources */,
 				E940F6E61F3153EF0012F027 /* PickupTableViewController.swift in Sources */,
