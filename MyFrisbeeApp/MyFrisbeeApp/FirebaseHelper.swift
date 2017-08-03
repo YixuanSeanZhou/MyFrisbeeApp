@@ -13,7 +13,9 @@ import FirebaseAuthUI
 
 
 struct FirebaseHelper {
-  
+    
+    //Writing data to Firebase
+    
     static func createGame(gameTitle: String, gameTime: String, gameLocation: String, gameURL : String, gameHeight: Float){
        //sst dictionary
         
@@ -32,7 +34,39 @@ struct FirebaseHelper {
         ref.updateChildValues(dict)
     }
     
-    //
+    
+    static func editUserInfo(userName: String, userTeam: String, userGender: String,  userPosition : String, userHeight: String, userWeight: String, userAvatarURL: String, userAvatarHeight: Float){
+        //sst dictionary
+        
+        
+        let dict = ["userName": userName,
+                    "userTeam": userTeam,
+                    "userGender": userGender,
+                    "userPosition": userPosition,
+                    "userHeight": userHeight,
+                    "userWeight": userWeight,
+//                    "userAvatarHeight": userAvatarHeight,
+                    "userAvatarURL": userAvatarURL
+                    ] as [String : Any]
+        
+        let ref = Database.database().reference().child("users").child(User.current.uid)
+        //ste reference on database
+        
+        
+        ref.updateChildValues(dict)
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // Getting Data From Firebase
     
 
      static func getGames(completion: @escaping([Game]) -> ()) {
@@ -49,13 +83,37 @@ struct FirebaseHelper {
             }
           completion(array)
         })
-     }
-     
-     
-     
-     
-     
-   
+    }
+    
+    
+    
+    static func getUserInfos(completion: @escaping(UserInfos) -> ()) {
+        //where to find our data
+      
+        let ref = Database.database().reference().child("users").child(User.current.uid)
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+             let userInfo = UserInfos(dictionary: snapshot.value as! [String : Any], key: snapshot.key)
+ 
+                completion(userInfo!)
+        })
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

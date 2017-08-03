@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import FirebaseStorage
+import FirebaseDatabase
 
 class CreateAGameViewController: UIViewController {
 
+    // MARK: - Properties
+    
+    let photoHelper = MGPhotoHelper()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
 
         // Do any additional setup after loading the view.
     }
@@ -22,6 +32,7 @@ class CreateAGameViewController: UIViewController {
     }
     
     @IBOutlet weak var titleTextField: UITextField!
+
 
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
@@ -43,6 +54,8 @@ class CreateAGameViewController: UIViewController {
         descriptionTextView.isUserInteractionEnabled=false
         
         
+        FirebaseHelper.createGame(gameTitle: titleTextField.text!, gameTime: timeTextField.text!, gameLocation: locationTextField.text! , gameURL: PickupTableViewController.url, gameHeight: Float(PickupTableViewController.aspectHeight))
+        
         let storyboard = UIStoryboard(type: .main)
         if let initialViewController = storyboard.instantiateInitialViewController() {
             self.view.window?.rootViewController = initialViewController
@@ -50,10 +63,27 @@ class CreateAGameViewController: UIViewController {
         }
     }
     
-    
-    
-    
+    @IBOutlet weak var uploadImageButton: UIButton!
+    @IBAction func uploadImageButtonTapped(_ sender: UIButton) {
+        print("I Love JJLin")
+        photoHelper.completionHandler = { image in
+            print("handle image")
+            let storageRef = StorageReference.newPostImageReference()
+            StorageService.uploadImage(image, at: storageRef, completion: { (downloadURL) in
+                guard let downloadURL = downloadURL else {
+                    return
+                }
+                //self.gameImageImageView.image = image
+                PickupTableViewController.url = downloadURL.absoluteString
+            })
+            self.gameImageImageView.image = image
+        }
+        photoHelper.presentActionSheet(from: self)
+        
     }
+    
+    
+}
     /*
     // MARK: - Navigation
 

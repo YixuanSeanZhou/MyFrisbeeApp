@@ -81,16 +81,16 @@
                                                 <constraint firstItem="L3C-qA-Vf9" firstAttribute="leading" secondItem="jgW-lp-IXg" secondAttribute="leading" id="6vY-rz-uRG"/>
                                             </constraints>
                                         </stackView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G2K-yr-yvG">
-                                            <rect key="frame" x="267" y="5" width="103" height="95"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoli-marin" translatesAutoresizingMaskIntoConstraints="NO" id="G2K-yr-yvG">
+                                            <rect key="frame" x="248" y="5" width="114" height="95"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="bbM-Jb-Dps" firstAttribute="leading" secondItem="992-tg-v8j" secondAttribute="leadingMargin" constant="-5" id="6SS-MT-bG2"/>
                                         <constraint firstItem="bbM-Jb-Dps" firstAttribute="bottom" secondItem="G2K-yr-yvG" secondAttribute="bottom" id="8E3-28-AIO"/>
-                                        <constraint firstItem="G2K-yr-yvG" firstAttribute="leading" secondItem="bbM-Jb-Dps" secondAttribute="trailing" constant="89" id="CgO-KC-hvx"/>
+                                        <constraint firstItem="G2K-yr-yvG" firstAttribute="leading" secondItem="bbM-Jb-Dps" secondAttribute="trailing" constant="70" id="CgO-KC-hvx"/>
                                         <constraint firstItem="bbM-Jb-Dps" firstAttribute="top" secondItem="992-tg-v8j" secondAttribute="top" id="Jpn-EX-PsQ"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="G2K-yr-yvG" secondAttribute="trailing" constant="-3" id="URs-YZ-HLB"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="G2K-yr-yvG" secondAttribute="trailing" constant="5" id="URs-YZ-HLB"/>
                                         <constraint firstItem="G2K-yr-yvG" firstAttribute="top" secondItem="992-tg-v8j" secondAttribute="topMargin" constant="-3" id="bBF-hq-4Ch"/>
                                         <constraint firstItem="G2K-yr-yvG" firstAttribute="centerY" secondItem="992-tg-v8j" secondAttribute="centerY" id="y9K-Pa-A1T"/>
                                     </constraints>
@@ -150,5 +150,6 @@
     <resources>
         <image name="Clock1X" width="125" height="126"/>
         <image name="Location" width="160" height="241"/>
+        <image name="yoli-marin" width="960" height="640"/>
     </resources>
 </document>

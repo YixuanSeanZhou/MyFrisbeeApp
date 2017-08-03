@@ -11,13 +11,20 @@
 		7DED46F61F30713B00B6012F /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DED46F41F30713B00B6012F /* Contact.storyboard */; };
 		7DED46F71F30713B00B6012F /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DED46F51F30713B00B6012F /* Create.storyboard */; };
 		E24B60335053D9C3805CABC6 /* Pods_MyFrisbeeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF9E735FABB18DB2060D77C /* Pods_MyFrisbeeApp.framework */; };
+		E929013F1F322E2E00D20A87 /* Storage+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E929013E1F322E2E00D20A87 /* Storage+Post.swift */; };
+		E92901411F3281C900D20A87 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92901401F3281C900D20A87 /* PersonalViewController.swift */; };
+		E92901451F32827B00D20A87 /* UserInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92901441F32827B00D20A87 /* UserInfos.swift */; };
 		E940F6E41F30CC800012F027 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940F6E31F30CC800012F027 /* Game.swift */; };
 		E940F6E61F3153EF0012F027 /* PickupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940F6E51F3153EF0012F027 /* PickupTableViewController.swift */; };
 		E94BCD791F316B9F006A9848 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94BCD781F316B9F006A9848 /* FirebaseHelper.swift */; };
+		E97464451F31BDD2002345C1 /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97464441F31BDD2002345C1 /* MGPhotoHelper.swift */; };
 		E98BF8951F3060E700017C83 /* Pickup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98BF8941F3060E700017C83 /* Pickup.storyboard */; };
 		E992760F1F307AED0046415E /* PickupGamesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992760E1F307AED0046415E /* PickupGamesInfo.swift */; };
 		E99276111F307D0F0046415E /* Personal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99276101F307D0F0046415E /* Personal.storyboard */; };
 		E99276131F3084900046415E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99276121F3084900046415E /* ContactViewController.swift */; };
+		E996BC431F31E9BA00D1BEEE /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996BC421F31E9BA00D1BEEE /* StorageService.swift */; };
+		E996BC451F31F2E200D1BEEE /* CreateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996BC441F31F2E200D1BEEE /* CreateService.swift */; };
+		E996BC471F31FA3C00D1BEEE /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996BC461F31FA3C00D1BEEE /* UIImage+Size.swift */; };
 		E9E875361F301373007EC169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E875351F301373007EC169 /* AppDelegate.swift */; };
 		E9E8753E1F301373007EC169 /* MyFrisbeeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E8753C1F301373007EC169 /* MyFrisbeeApp.xcdatamodeld */; };
 		E9E875401F301373007EC169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E8753F1F301373007EC169 /* Assets.xcassets */; };
@@ -41,13 +48,20 @@
 		7DED46F41F30713B00B6012F /* Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Contact.storyboard; path = Storyboards/Contact.storyboard; sourceTree = "<group>"; };
 		7DED46F51F30713B00B6012F /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Create.storyboard; path = Storyboards/Create.storyboard; sourceTree = "<group>"; };
 		E822E4ADE5A3C22BF70B4106 /* Pods-MyFrisbeeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFrisbeeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFrisbeeApp/Pods-MyFrisbeeApp.release.xcconfig"; sourceTree = "<group>"; };
+		E929013E1F322E2E00D20A87 /* Storage+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storage+Post.swift"; sourceTree = "<group>"; };
+		E92901401F3281C900D20A87 /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalViewController.swift; path = Controller/PersonalViewController.swift; sourceTree = "<group>"; };
+		E92901441F32827B00D20A87 /* UserInfos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfos.swift; path = Models/UserInfos.swift; sourceTree = "<group>"; };
 		E940F6E31F30CC800012F027 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		E940F6E51F3153EF0012F027 /* PickupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickupTableViewController.swift; sourceTree = "<group>"; };
 		E94BCD781F316B9F006A9848 /* FirebaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		E97464441F31BDD2002345C1 /* MGPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MGPhotoHelper.swift; path = Supportingd/MGPhotoHelper.swift; sourceTree = "<group>"; };
 		E98BF8941F3060E700017C83 /* Pickup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Pickup.storyboard; path = Storyboards/Pickup.storyboard; sourceTree = "<group>"; };
 		E992760E1F307AED0046415E /* PickupGamesInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickupGamesInfo.swift; sourceTree = "<group>"; };
 		E99276101F307D0F0046415E /* Personal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Personal.storyboard; path = Storyboards/Personal.storyboard; sourceTree = "<group>"; };
 		E99276121F3084900046415E /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		E996BC421F31E9BA00D1BEEE /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		E996BC441F31F2E200D1BEEE /* CreateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateService.swift; sourceTree = "<group>"; };
+		E996BC461F31FA3C00D1BEEE /* UIImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		E9E875321F301373007EC169 /* MyFrisbeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFrisbeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E875351F301373007EC169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E8753D1F301373007EC169 /* MyFrisbeeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFrisbeeApp.xcdatamodel; sourceTree = "<group>"; };
@@ -144,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E875701F304DDB007EC169 /* Storyboard+Utility.swift */,
+				E929013E1F322E2E00D20A87 /* Storage+Post.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -152,6 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				E9E8756E1F304D44007EC169 /* UserService.swift */,
+				E996BC421F31E9BA00D1BEEE /* StorageService.swift */,
+				E996BC441F31F2E200D1BEEE /* CreateService.swift */,
+				E996BC461F31FA3C00D1BEEE /* UIImage+Size.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -159,6 +177,7 @@
 		E9E8754E1F3017A4007EC169 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E92901401F3281C900D20A87 /* PersonalViewController.swift */,
 				E940F6E51F3153EF0012F027 /* PickupTableViewController.swift */,
 				E9E875661F3026DE007EC169 /* LoginViewController.swift */,
 				E9E875521F301828007EC169 /* ViewController.swift */,
@@ -180,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				E94BCD781F316B9F006A9848 /* FirebaseHelper.swift */,
+				E97464441F31BDD2002345C1 /* MGPhotoHelper.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -211,6 +231,7 @@
 		E9E875611F302462007EC169 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E92901441F32827B00D20A87 /* UserInfos.swift */,
 				E9E8756C1F304D3B007EC169 /* User.swift */,
 				E940F6E31F30CC800012F027 /* Game.swift */,
 			);
@@ -357,11 +378,18 @@
 				E940F6E41F30CC800012F027 /* Game.swift in Sources */,
 				E9E8756F1F304D44007EC169 /* UserService.swift in Sources */,
 				E992760F1F307AED0046415E /* PickupGamesInfo.swift in Sources */,
+				E92901451F32827B00D20A87 /* UserInfos.swift in Sources */,
 				E9E875361F301373007EC169 /* AppDelegate.swift in Sources */,
 				E9E875711F304DDB007EC169 /* Storyboard+Utility.swift in Sources */,
+				E996BC431F31E9BA00D1BEEE /* StorageService.swift in Sources */,
+				E996BC451F31F2E200D1BEEE /* CreateService.swift in Sources */,
+				E92901411F3281C900D20A87 /* PersonalViewController.swift in Sources */,
+				E996BC471F31FA3C00D1BEEE /* UIImage+Size.swift in Sources */,
+				E97464451F31BDD2002345C1 /* MGPhotoHelper.swift in Sources */,
 				E9E8756B1F304CE4007EC169 /* Constants.swift in Sources */,
 				E9E8756D1F304D3B007EC169 /* User.swift in Sources */,
 				E940F6E61F3153EF0012F027 /* PickupTableViewController.swift in Sources */,
+				E929013F1F322E2E00D20A87 /* Storage+Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

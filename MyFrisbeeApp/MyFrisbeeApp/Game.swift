@@ -14,7 +14,7 @@ class Game {
     
     var key: String?
     let imageURL: String
-    let imageHeight: CGFloat
+    //let imageHeight: CGFloat
     let gameTitle: String
     let gameLocation: String
     let gameTime: String
@@ -23,7 +23,7 @@ class Game {
     
     init(imageURL: String, imageHeight: CGFloat, gameTitle: String, gameLocation: String, gameTime: String){
         self.imageURL = imageURL
-        self.imageHeight = imageHeight
+       // self.imageHeight = imageHeight
         self.gameTitle = gameTitle
         self.gameTime = gameTime
         self.gameLocation = gameLocation
@@ -36,9 +36,9 @@ class Game {
         self.gameLocation = dictionary["gameLocation"] as! String
         self.gameTime = dictionary["gameTime"] as! String
         self.imageURL = dictionary["gameURL"] as! String
-//        self.poster = dictionary["gamePoster"] as! User
+        //self.poster = dictionary["gamePoster"] as! User
         self.userName = dictionary["gamePoster"] as! String
-        self.imageHeight = CGFloat(dictionary["gameHeight"] as! Float)
+       // self.imageHeight = CGFloat(dictionary["gameHeight"] as! Float)
     }
 
   
