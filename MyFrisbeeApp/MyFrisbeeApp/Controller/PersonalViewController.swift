@@ -97,10 +97,16 @@ class MyselfViewController: UIViewController {
     
     @IBOutlet weak var genderSegementedControl: UISegmentedControl!
 
+    @IBAction func genderSegementedControlTapped(_ sender: UISegmentedControl) {
+        var userGender = Int (genderSegementedControl.selectedSegmentIndex)
+    }
     @IBOutlet weak var positionLabel: UILabel!
     
     @IBOutlet weak var positionSementedControl: UISegmentedControl!
     
+    @IBAction func positionSegmentedControlTapped(_ sender: UISegmentedControl) {
+        var userPosition = Int (positionSementedControl.selectedSegmentIndex)
+    }
     @IBOutlet weak var heightLabel: UILabel!
     
     @IBOutlet weak var heightTextField: UITextField!
